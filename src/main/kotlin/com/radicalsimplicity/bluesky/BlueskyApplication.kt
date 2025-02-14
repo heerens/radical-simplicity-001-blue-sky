@@ -7,5 +7,5 @@ import org.springframework.boot.runApplication
 class BlueskyApplication
 
 fun main(args: Array<String>) {
-	runApplication<BlueskyApplication>(*args)
+    runApplication<BlueskyApplication>(*args)
 }
