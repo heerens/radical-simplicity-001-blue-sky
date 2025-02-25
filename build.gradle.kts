@@ -4,6 +4,8 @@ plugins {
     id("org.springframework.boot") version "3.4.2"
     id("io.spring.dependency-management") version "1.1.7"
     id("gg.jte.gradle") version "3.1.16"
+
+    id("au.id.wale.tailwind") version "0.2.0"
 }
 
 group = "com.radicalsimplicity"
@@ -17,6 +19,18 @@ java {
 
 repositories {
     mavenCentral()
+}
+
+tasks.named("compileKotlin") {
+    dependsOn("tailwindCompile")
+    dependsOn("generateJte")
+}
+
+tailwind {
+    version = "3.4.17"
+    configPath = "src/main/resources/tailwind"
+    input = "src/main/resources/tailwind/style.css"
+    output = "src/main/resources/static/style.css"
 }
 
 dependencies {

@@ -1,6 +1,7 @@
 <html lang="en">
 <head>
     <title>Blue Sky</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
 HELLO WORLD
