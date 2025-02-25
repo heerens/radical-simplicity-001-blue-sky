@@ -1,15 +1,20 @@
 <html lang="en">
 <head>
     <title>Blue Sky</title>
-    <script src="https://unpkg.com/htmx.org@2.0.4" integrity="sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+" crossorigin="anonymous"></script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/htmx.org@2.0.4"
+            integrity="sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+"
+            crossorigin="anonymous"></script>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
 <main class="mx-auto container">
     <div class="flex gap-4 m-auto w-full">
-        <div class="w-96">nav</div>
+        <div class="w-96">
+            @template.menu.Menu()
+        </div>
         <div class="w-full">main</div>
         <div class="w-96">3rd</div>
     </div>
